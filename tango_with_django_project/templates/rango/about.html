@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+{% load staticfiles %}
+
+  <head>
+    <title>About</title>
+  </head>
+
+  <body>
+    <h1>About</h1>
+    <div>
+      This tutorial has been put together by Paul McHard. <br />
+      <strong>{{ boldmessage }}</strong><br />
+    </div>
+    <div>
+      <a href="/rango/">Index</a><br /a>
+      <img src="{% static "images/johnnydepp.png" %}" alt="Johnny Depp as Rango" />
+    </div>
+    <div>
+      Here is a cool looking cat also. <br />
+      <img src="{{ MEDIA_URL }}cat.jpg" alt="Cat" />
+    </div>
+  </body>
+
+</html>
