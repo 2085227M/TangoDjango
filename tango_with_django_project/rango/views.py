@@ -6,8 +6,12 @@ from rango.models import Page
 def index(request):
     #context_dict = {'boldmessage': "Crunchy, creamy, cookie, candy, cupcake!"}
     category_list = Category.objects.order_by('-likes')[:5]
-    context_dict = {'categories': category_list}
-    return render(request, 'rango/index.html', context=context_dict)
+
+    page_list = Page.objects.order_by('-views')[:5]
+
+    context_dict = {'categories': category_list, 'pages': page_list}
+    response = render(request, 'rango/index.html', context=context_dict)
+    return response
 
 def about(request):
     context_dict = {'boldmessage': "Johnny Depp played Rango the Chameleon in the movie, here he is in character"}
