@@ -1,0 +1,519 @@
+rango.tests_chapter6.Chapter6ViewTests.test_index_context
+E
+======================================================================
+ERROR: test_index_context (rango.tests_chapter6.Chapter6ViewTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter6.py", line 43, in test_index_context
+    self.assertCountEqual(response.context['pages'], [])
+  File "/Users/Owner/.virtualenvs/rango/lib/python3.6/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'pages'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.011s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter6.Chapter6ViewTests.test_index_displays_five_most_viewed_pages
+F
+======================================================================
+FAIL: test_index_displays_five_most_viewed_pages (rango.tests_chapter6.Chapter6ViewTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter6.py", line 89, in test_index_displays_five_most_viewed_pages
+    self.assertIn("Page " + str(i), response.content.decode('ascii'))
+AssertionError: 'Page 20' not found in '<!DOCTYPE html>\n\n<html>\n<head>\n  <title>Rango</title>\n</head>\n<body>\n  <h1>Rango says...</h1>\n  <div> hey there partner!</div>\n\n    <div>\n    \n    <ul>\n      \n        <li>\n        <a href="/rango/category/category-10">Category 10</a>\n        </li>\n      \n        <li>\n        <a href="/rango/category/category-9">Category 9</a>\n        </li>\n      \n        <li>\n        <a href="/rango/category/category-8">Category 8</a>\n        </li>\n      \n        <li>\n        <a href="/rango/category/category-7">Category 7</a>\n        </li>\n      \n        <li>\n        <a href="/rango/category/category-6">Category 6</a>\n        </li>\n      \n    </ul>\n    \n  </div>\n\n  <div>\n      <a href="/rango/about/">About Rango</a><br /a>\n      <img src="/static/images/rango.jpg" alt="Picture of Rango" />\n  </div>\n</body>\n</html>\n'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.020s
+
+FAILED (failures=1)
+===========================================================================
+
+
+rango.tests_chapter7.Chapter7ViewTests.test_index_contains_link_to_add_category
+E
+======================================================================
+ERROR: tests_chapter7 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter7
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter7.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter7.Chapter7ViewTests.test_add_category_form_is_displayed_correctly
+E
+======================================================================
+ERROR: tests_chapter7 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter7
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter7.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter7.Chapter7ViewTests.test_add_page_form_is_displayed_correctly
+E
+======================================================================
+ERROR: tests_chapter7 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter7
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter7.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter7.Chapter7ViewTests.test_access_category_that_does_not_exists
+E
+======================================================================
+ERROR: tests_chapter7 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter7
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter7.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter7.Chapter7ViewTests.test_link_to_add_page_only_appears_in_valid_categories
+E
+======================================================================
+ERROR: tests_chapter7 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter7
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter7.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter7.Chapter7ViewTests.test_category_contains_link_to_add_page
+E
+======================================================================
+ERROR: tests_chapter7 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter7
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter7.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter8.Chapter8ViewTests.test_base_template_exists
+E
+======================================================================
+ERROR: tests_chapter8 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter8
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter8.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter8.Chapter8ViewTests.test_titles_displayed
+E
+======================================================================
+ERROR: tests_chapter8 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter8
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter8.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter8.Chapter8ViewTests.test_pages_using_templates
+E
+======================================================================
+ERROR: tests_chapter8 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter8
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter8.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter8.Chapter8ViewTests.test_url_reference_in_index_page_when_logged
+E
+======================================================================
+ERROR: tests_chapter8 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter8
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter8.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter8.Chapter8ViewTests.test_url_reference_in_index_page_when_not_logged
+E
+======================================================================
+ERROR: tests_chapter8 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter8
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter8.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter8.Chapter8ViewTests.test_link_to_index_in_base_template
+E
+======================================================================
+ERROR: tests_chapter8 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter8
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter8.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter8.Chapter8ViewTests.test_url_reference_in_category_page
+E
+======================================================================
+ERROR: tests_chapter8 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter8
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter8.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9ModelTests.test_user_profile_model
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter9.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9ViewTests.test_registration_form_is_displayed_correctly
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter9.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9ViewTests.test_login_form_is_displayed_correctly
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter9.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9ViewTests.test_login_provides_error_message
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter9.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9ViewTests.test_login_redirects_to_index
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter9.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9ViewTests.test_upload_image
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter9.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter10.Chapter10SessionTests.test_user_number_of_access_and_last_access_to_index
+E
+======================================================================
+ERROR: tests_chapter10 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter10
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter10.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter10.Chapter10ViewTests.test_index_shows_number_of_visits
+E
+======================================================================
+ERROR: tests_chapter10 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter10
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter10.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter10.Chapter10ViewTests.test_about_page_shows_number_of_visits
+E
+======================================================================
+ERROR: tests_chapter10 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter10
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter10.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter10.Chapter10ViewTests.test_visit_number_is_passed_via_context
+E
+======================================================================
+ERROR: tests_chapter10 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter10
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/Owner/Documents/Software/Workspace/geracTest/rango_tests/temporal/tango_with_django_project/rango/tests_chapter10.py", line 20, in <module>
+    from rango.forms import CategoryForm, PageForm
+ModuleNotFoundError: No module named 'rango.forms'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+

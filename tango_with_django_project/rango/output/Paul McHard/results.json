@@ -1,0 +1,64 @@
+{
+    "chapter3": {
+        "Chapter3ViewTests.test_index_contains_hello_message": true,
+        "Chapter3ViewTests.test_about_contains_create_message": true
+    },
+    "chapter4": {
+        "Chapter4ViewTest.test_view_has_title": true,
+        "Chapter4ViewTest.test_index_using_template": true,
+        "Chapter4ViewTest.test_about_using_template": true,
+        "Chapter4ViewTest.test_rango_picture_displayed": true,
+        "Chapter4ViewTest.test_cat_picture_displayed": true,
+        "Chapter4ViewTest.test_about_contain_image": true,
+        "Chapter4ViewTest.test_serving_static_files": true
+    },
+    "chapter5": {
+        "Chapter5ModelTests.test_create_a_new_category": true,
+        "Chapter5ModelTests.test_create_pages_for_categories": true,
+        "Chapter5ModelTests.test_population_script_changes": true
+    },
+    "chapter6": {
+        "Chapter6ModelTests.test_category_contains_slug_field": true,
+        "Chapter6ViewTests.test_index_context": false,
+        "Chapter6ViewTests.test_index_displays_five_most_liked_categories": true,
+        "Chapter6ViewTests.test_index_displays_no_categories_message": true,
+        "Chapter6ViewTests.test_index_displays_five_most_viewed_pages": false,
+        "Chapter6ViewTests.test_index_contains_link_to_categories": true,
+        "Chapter6ViewTests.test_category_context": true,
+        "Chapter6ViewTests.test_category_page_using_template": true,
+        "Chapter6ViewTests.test_category_page_displays_pages": true,
+        "Chapter6ViewTests.test_category_page_displays_empty_message": true,
+        "Chapter6ViewTests.test_category_page_displays_category_does_not_exist_message": true
+    },
+    "chapter7": {
+        "Chapter7ViewTests.test_index_contains_link_to_add_category": false,
+        "Chapter7ViewTests.test_add_category_form_is_displayed_correctly": false,
+        "Chapter7ViewTests.test_add_page_form_is_displayed_correctly": false,
+        "Chapter7ViewTests.test_access_category_that_does_not_exists": false,
+        "Chapter7ViewTests.test_link_to_add_page_only_appears_in_valid_categories": false,
+        "Chapter7ViewTests.test_category_contains_link_to_add_page": false
+    },
+    "chapter8": {
+        "Chapter8ViewTests.test_base_template_exists": false,
+        "Chapter8ViewTests.test_titles_displayed": false,
+        "Chapter8ViewTests.test_pages_using_templates": false,
+        "Chapter8ViewTests.test_url_reference_in_index_page_when_logged": false,
+        "Chapter8ViewTests.test_url_reference_in_index_page_when_not_logged": false,
+        "Chapter8ViewTests.test_link_to_index_in_base_template": false,
+        "Chapter8ViewTests.test_url_reference_in_category_page": false
+    },
+    "chapter9": {
+        "Chapter9ModelTests.test_user_profile_model": false,
+        "Chapter9ViewTests.test_registration_form_is_displayed_correctly": false,
+        "Chapter9ViewTests.test_login_form_is_displayed_correctly": false,
+        "Chapter9ViewTests.test_login_provides_error_message": false,
+        "Chapter9ViewTests.test_login_redirects_to_index": false,
+        "Chapter9ViewTests.test_upload_image": false
+    },
+    "chapter10": {
+        "Chapter10SessionTests.test_user_number_of_access_and_last_access_to_index": false,
+        "Chapter10ViewTests.test_index_shows_number_of_visits": false,
+        "Chapter10ViewTests.test_about_page_shows_number_of_visits": false,
+        "Chapter10ViewTests.test_visit_number_is_passed_via_context": false
+    }
+}
