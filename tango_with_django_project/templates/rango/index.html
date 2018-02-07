@@ -10,13 +10,13 @@
       </div>
       <div>
           <div>
-          <h3> Most Liked Categories</h3>
+              <h3> Most Liked Categories</h3>
           </div>
       {% if categories %}
     <ul>
         {% for category in categories %}
         <li><a href="{% url 'show_category' category.slug %}">{{ category.name }}</a></li>
-  {% endfor %}
+        {% endfor %}
 </ul>
   {% else %}
     <strong>There are no categories present.</strong>
